@@ -423,13 +423,26 @@ button {
      padding-bottom: 40px;
 }
 
+.titlepage1 {
+     padding-bottom: 40px;
+}
+
 .titlepage h5 {
      color: #BC0D39;
      line-height: 45px;
      font-weight: bold;
      padding: 0;
 }
+
 .titlepage h2 {
+     font-size: 40px;
+     color: #000000;
+     line-height: 45px;
+     font-weight: bold;
+     padding: 0;
+}
+
+.titlepage1 h2 {
      font-size: 40px;
      color: #424242;
      line-height: 45px;
@@ -460,8 +473,83 @@ button {
      font-weight: 400;
 }
 
+.read_more1 {
+     font-size: 17px;
+     background-color: #BC0D39;
+     color: #fff;
+     padding: 12px 0px;
+     width: 100%;
+     max-width: 210px;
+     text-align: center;
+     display: inline-block;
+     transition: ease-in all 0.5s;
+     font-weight: 400;
+}
+
+.color-secundario {
+  color: #BA0D39; /* color para la segunda palabra */
+}
+
+.h3-fuerte {
+  font-weight: 900; /* negrita máxima */
+}
+
+.h4-fuerte {
+  font-weight: 900; /* negrita máxima */
+}
+
+.titulo-fecha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.titulo-textos h2,
+.titulo-textos .titulo-negro {
+    display: block;
+    margin: 0;
+}
+
+.cuadrado-fecha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* o center si lo quieres centrado */
+    justify-content: center;
+    text-align: left;
+}
+
+/* Día en morado, más grande */
+.cuadrado-fecha .dia {
+    color: #BA0D39;
+  font-weight: bold;
+  font-size: 36px;
+  margin-right: 213px;
+}
+
+/* Mes y Año en negro, negrita y más grandes */
+.cuadrado-fecha .mes,
+.cuadrado-fecha .anio {
+    color: #000;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.cuadrado-anio {
+    margin-left: 20px;
+}
 
 
+
+.cuadrado-fecha span {
+    font-size: 12px;
+}
+
+.titulo-dual {
+    display: flex;
+    justify-content: space-between; /* h3 izquierda, h4 derecha */
+    align-items: center;            /* alineación vertical */
+}
 /** about section **/
 
 .about {
@@ -546,6 +634,89 @@ button {
      color: #181818;
 }
 
+.navbar-nav a,
+.dropdown-menu a {
+    text-transform: uppercase;
+}
+
+.navbar,
+.navbar * {
+    z-index: 9999 !important;
+}
+
+.dropdown-menu {
+    position: absolute !important;
+    z-index: 99999 !important;
+}
+
+.nav .nav-link { width:38px; height:38px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#f1f1f1; color:#333; }
+.nav .nav-link:hover { background:#e0e0e0; }
+
+.sociales a {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+   background-color: red; /* color del círculo */
+   color: white;          /* color del ícono */
+   font-size: 20px;
+   margin: 5px;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+.sociales a:hover {
+   background-color: #b30000; /* rojo más oscuro al pasar el mouse */
+}
+
+.sociales {
+   text-align: right;   /* Mueve los iconos a la derecha */
+   padding-right: 20px; /* Opcional: separa del borde */
+}
+
+.sociales a {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+   background-color: #ad0a1d;
+   color: white;
+   font-size: 20px;
+   margin: 5px;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+.sociales a:hover {
+   background-color: #b30000;
+}
+
+.service_box {
+    background: #ffffff;          /* Fondo blanco */
+    padding: 25px;
+    border-radius: 12px;          /* Bordes redondeados (puedes cambiarlo) */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);  /* Sombreado */
+    text-align: center;           /* Centra todo */
+    margin-bottom: 30px;          /* Separación entre cajas */
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+/* Efecto hover opcional (queda más pro) */
+.service_box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.20);
+}
+
+.service_box img {
+    width: 70px;          /* Ajusta tamaño del ícono */
+    margin-bottom: 10px;
+}
+
+
 .service .read_more {
      margin: 0 auto;
      display: block;
@@ -555,6 +726,19 @@ button {
 
 /** end service section **/
 
+.titlepage h5,
+.titlepage h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.titulo-rojo,
+.titulo-dividido,
+.titulo-dividido span,
+.titlepage span {
+    text-align: left !important;
+}
 
 /** gallery  section **/
 
@@ -912,6 +1096,15 @@ button {
      padding: 80px 0;
 }
 
+.contact1 {
+     background: url(../images/Group.png);
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     background-position: center;
+     margin-top: -58px;
+     padding: 80px 0;
+}
+
 .contact .titlepage {
      text-align: left;
      color: #000;
@@ -930,6 +1123,8 @@ button {
 
 .titulo-rojo {
     color: #BC0D39;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 .titulo-dividido {
@@ -940,11 +1135,99 @@ button {
 .titulo-dividido .mitad-1 {
     color: #000000; /* Primer color (azul ejemplo) */
     display: block; /* Mantener alineado debajo del h4 */
+    font-size: 42px;
 }
 
 .titulo-dividido .mitad-2 {
     color: #BC0D39; /* Segundo color (verde ejemplo) */
     display: block; /* Mantener en la siguiente línea */
+    font-size: 42px;
+}
+
+.claseh3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.fila-bloques {
+    display: flex;
+    gap: 20px;          /* separación entre bloques */
+    flex-wrap: wrap;    /* por si deseas que bajen en pantallas pequeñas */
+}
+
+.bloque {
+    background: #ffffff;          /* fondo blanco */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* sombra suave */
+    border-radius: 10px;          /* bordes redondeados */
+    padding: 20px;                /* espacio interno */
+    width: 100%;
+    max-width: 300px;             /* tamaño controlado del bloque */
+    text-align: center;           /* centrar contenido */
+}
+
+.bloque img {
+    width: 100%;
+    border-radius: 10px; /* opcional */
+}
+
+.claseh3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.fila-bloques {
+    display: flex;
+    gap: 20px;          /* separación entre bloques */
+    flex-wrap: wrap;    /* por si deseas que bajen en pantallas pequeñas */
+}
+
+.bloque {
+    background: #ffffff;          /* fondo blanco */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* sombra suave */
+    border-radius: 10px;          /* bordes redondeados */
+    padding: 20px;                /* espacio interno */
+    width: 100%;
+    max-width: 300px;             /* tamaño controlado del bloque */
+    text-align: center;           /* centrar contenido */
+}
+
+.bloque img {
+    width: 100%;
+    border-radius: 10px; /* opcional */
+}
+
+.claseh3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.fila-bloques {
+    display: flex;
+    gap: 39px;          /* separación entre bloques */
+    flex-wrap: wrap;    /* por si deseas que bajen en pantallas pequeñas */
+}
+
+.bloque {
+    background: #ffffff;          /* fondo blanco */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* sombra suave */
+    border-radius: 10px;          /* bordes redondeados */
+    padding: 20px;                /* espacio interno */
+    width: 100%;
+    max-width: 300px;             /* tamaño controlado del bloque */
+    text-align: center;           /* centrar contenido */
+}
+
+.bloque img {
+    width: 100%;
+    border-radius: 10px; /* opcional */
+}
+
+.claseh3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .titlepage h4,
@@ -968,20 +1251,21 @@ button {
 }
 
 .logo-small {
-    max-width: 120px; /* AJUSTA EL TAMAÑO QUE QUIERAS */
-    height: auto;
+    max-width: 230px;
+  height: auto;
+  margin-bottom: 41px;
 }
 
 
 .fila-bloques {
     display: flex;
-    gap: 20px; /* espacio entre bloques */
+    gap: 35px; /* espacio entre bloques */
     margin-top: 20px;
 }
 
 .bloque {
     flex: 1;
-    background: #f5f5f5;
+    background: #fffefe;
     padding: 15px;
     border-radius: 6px;
 }
@@ -992,18 +1276,26 @@ button {
 }
 
 .btn-bloque {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 18px;
-    background: #d30000; /* rojo */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: #EBEBEB;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+
+  /* Sombra debajo */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
+
 
 .btn-bloque:hover {
     background: #a80000;
+}
+
+.alinear-centro {
+   text-align: left;
 }
 
 
