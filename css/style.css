@@ -265,7 +265,7 @@ button {
 
 .navigation.navbar-dark .navbar-nav .nav-link {
      padding: 0;
-     margin: 0px 40px;
+     margin: 0px 15px;
      color: #333333;
      font-size: 16px;
      line-height: 20px;
@@ -410,6 +410,14 @@ button {
 
 /** end banner section **/
 
+.titulo-negro {
+    display: block;     /* Para que quede debajo del h2 */
+    color: #000;        /* Negro */
+    text-shadow: none;  /* Quitar sombra */
+    margin-top: 0;      
+    font-size: 40px;    /* Ajusta si quieres igual tamaño que el h2 */
+}
+
 .titlepage {
      text-align: center;
      padding-bottom: 40px;
@@ -507,6 +515,13 @@ button {
 
 
 /** end about section **/
+#gallery {
+    background-image: url("images/Group.png");
+    background-size: cover;       /* La imagen cubre todo el fondo */
+    background-position: center;  /* Centrada */
+    background-repeat: no-repeat; /* No repetir */
+    padding: 60px 0;              /* Espaciado interno opcional */
+}
 
 
 /** service section **/
@@ -889,7 +904,7 @@ button {
 /** contact section **/
 
 .contact {
-     background: url(../images/conatct.jpg);
+     background: url(../images/Group.png);
      background-size: 100% 100%;
      background-repeat: no-repeat;
      background-position: center;
@@ -899,12 +914,62 @@ button {
 
 .contact .titlepage {
      text-align: left;
+     color: #000;
+     font-size: 40px;
+     margin: 0;
 }
 
 .contact .titlepage h2 {
-     color: #fff;
-     font-weight: 500;
+     color: #000;
      text-transform: uppercase;
+}
+
+.titulo-rojo {
+    color: red;
+}
+
+.titulo-rojo {
+    color: #BC0D39;
+}
+
+.titulo-dividido {
+    line-height: 1.3;
+    margin-top: 10px; /* Alineado con el h4 */
+}
+
+.titulo-dividido .mitad-1 {
+    color: #000000; /* Primer color (azul ejemplo) */
+    display: block; /* Mantener alineado debajo del h4 */
+}
+
+.titulo-dividido .mitad-2 {
+    color: #BC0D39; /* Segundo color (verde ejemplo) */
+    display: block; /* Mantener en la siguiente línea */
+}
+
+.titlepage h4,
+.titlepage h2 {
+    display: block;
+    width: 100%;
+    margin: 0;                 /* quita espacio extra */
+    padding: 0;
+}
+
+.titlepage h4 {
+    margin-bottom: 5px;        /* separa un poquito del h2 */
+}
+
+.titulo-dividido {
+    line-height: 1.3;
+}
+
+.titulo-dividido span {
+    display: block;            /* obliga a que cada mitad esté debajo de la otra */
+}
+
+.logo-small {
+    max-width: 120px; /* AJUSTA EL TAMAÑO QUE QUIERAS */
+    height: auto;
 }
 
 .main_form .contactus {
