@@ -407,6 +407,34 @@ button {
      right: 45%;
 }
 
+.contenedor-principal {
+    text-align: center; /* Centra el título */
+    padding: 40px 20px;
+}
+
+.titulo-bloques {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+.fila-bloques1 {
+    display: flex;
+    justify-content: center; /* Centra los bloques horizontalmente */
+    gap: 20px;               /* Espacio entre bloques */
+    flex-wrap: nowrap;       /* Para que estén todos en una fila */
+}
+
+.bloque1 {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: 300px; /* Ancho fijo para que los 3 bloques quepan juntos */
+}
+
+
 
 /** end banner section **/
 
@@ -475,7 +503,7 @@ button {
 
 .read_more1 {
      font-size: 17px;
-     background-color: #BC0D39;
+     background-color: #2F2D2D;
      color: #fff;
      padding: 12px 0px;
      width: 100%;
